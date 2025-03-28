@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 import cv2
 
-img = cv2.imread('apple.jpg')
+img = cv2.imread('apple.jpg')   #将此处.jpg文件修改为你的
 img_PIL = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))  # 图像从OpenCV格式转换成PIL格式
 font = ImageFont.truetype('font.ttf', 20)  # 20为字体大小，根据需要调整
 fillColor = (255, 255, 0)
